@@ -1,0 +1,7 @@
+float64 x
+float64 y
+float64 z
+int8 ret
+int8 g
+---
+int8 ret
