@@ -1,16 +1,15 @@
 # 部署教程
 
-## 克隆代码并编译
+## 解压代码并编译
+解压压缩包到~/目录下，解压后的文件夹名为ik_ws
 ```
-cd ~
-git clone https://github.com/Craig-Xu/airship_ik.git
-cd airship_ik
+cd ik_ws
 colcon build
 ```
 
 ## 运行
 ```
-source ~/airship_ik/install/setup.bash
+source ~/ik_ws/install/setup.bash
 ros2 run airship_ik ik_node
 ```
 
@@ -36,5 +35,6 @@ int8 ret
 
 调用例子：
 ```
+source ~/ik_ws/install/setup.bash
 ros2 service call /grasp grasp_interface_pkg/srv/Grasp "x: 0.3 y: 0.0 z: 0.2 ret: 0 g: 1"
 ```
